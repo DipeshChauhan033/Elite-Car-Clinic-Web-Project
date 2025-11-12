@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="dodge.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="shortcut icon" href="logo2.jpg">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+    </style>
+    <title>Elite Car Clinic</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand title" href="#"><img class="logo" src="logo.png" alt="">Elite Car Clinic</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 order-lg-3">
+                    <li class="nav-item">
+                        
+                        <a class="nav-link " aria-current="page" href="index.html"><b>Home</b></a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carbrands.html"><b>Car Brands</b></a>
+                    </li>
+                       
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html"><b>Contact US</b></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link cartad" href="#"><b>Cart <i style="font-size: 105%;" class="uil uil-shopping-bag"></i></b></a>
+                    </li>
+                    
+                    
+                </ul>
+                <form class="d-flex mx-auto order-lg-2 my-2 my-lg-0 search-bar"> 
+                    <input class="form-control search-1" type="search" id="find" onkeyup="search()" autocomplete="off" placeholder="💨 Search Your Favourite" aria-label="Search">
+                </form>
+                
+            </div>
+        </div>
+    </nav>
+    <div class="cart" id="cart">
+        <div class="title">Cart</div><hr>
+        <div id="title"></div>
+    </div>
+<br>
+    <div class="row">
+        <div class="col-lg-12">
+            <img src="category/dodge/1.png" alt="" class="bgimg">
+        </div>
+    </div>
+<br><br>
+
+ <h2 class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All Models</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-6 ct-1" data-item-id="64">
+                <center><img src="category/dodge/Dodge Charger SRT Hellcat.png" alt="" width="100%"></center>
+                <h5 class="title">Dodge Charger SRT Hellcat</h5>
+                <u>Launch Year: 2023</u>
+                <h6>12.8 Mileage&nbsp;&nbsp;● Petrol</h6>
+                <b>₹85.00 Lakh - ₹1.2 Crore</b><br>
+                <button class="addtocart" onclick="addToCart(this)">Add To Cart&#8599</button><br>
+            </div>
+            <div class="col-lg-3 col-6 ct-1" data-item-id="65" style="margin-top: 20px;"><br>
+                <center><img src="category/dodge/Dodge Challenger SRT Demon.png" alt="" width="90%"></center>
+                <h5 class="title">Dodge Challenger SRT Demon</h5>
+                <u>Launch Year: 2023</u>
+                <h6>9.6 Mileage&nbsp;&nbsp;● Petrol</h6>
+                <b>₹90.00 Lakh - ₹1.4 Crore</b><br>
+                <button class="addtocart" onclick="addToCart(this)">Add To Cart&#8599</button><br>
+            </div>
+
+            <div class="col-lg-3 col-6 ct-1" data-item-id="66" style="margin-top: 20px;"><br>
+                <center><img src="category/dodge/Dodge Charger RT.png" alt="" width="90%"></center>
+                <h5 class="title">Dodge Charger R/T</h5>
+                <u>Launch Year: 2024</u>
+                <h6>13.5 Mileage&nbsp;&nbsp;● Petrol</h6>
+                <b>₹55.00 Lakh - ₹75.00 Lakh</b><br>
+                <button class="addtocart" onclick="addToCart(this)">Add To Cart&#8599</button><br>
+            </div>
+            <div class="col-lg-3 col-6 ct-1" data-item-id="67" style="margin-top: 10px;"><br>
+                <center><img src="category/dodge/Dodge Nitro.png" alt="" width="83%"></center><br>
+                <h5 class="title">Dodge Nitro</h5>
+                <u>Launch Year: 2023</u>
+                <h6>12.1 Mileage&nbsp;&nbsp;● Diesel</h6>
+                <b>₹45.00 Lakh - ₹65.00 Lakh</b><br>
+                <button class="addtocart" onclick="addToCart(this)">Add To Cart&#8599</button><br><br><br>
+            </div>
+
+
+            <div class="col-lg-3 col-6 ct-1" data-item-id="68">
+                <center><img src="category/dodge/dodge dart.png" alt="" width="100%"></center>
+                <h5 class="title">Dodge Dart</h5>
+                <u>Launch Year: 2024</u>
+                <h6>15.0 Mileage&nbsp;&nbsp;● Petrol</h6>
+                <b>₹30.00 Lakh - ₹50.00 Lakh</b><br>
+                <button class="addtocart" onclick="addToCart(this)">Add To Cart&#8599</button><br>
+            </div>
+
+            <div class="col-lg-3 col-6 ct-1" data-item-id="69" style="margin-top: -22px;">
+                <center><img src="category/dodge/Dodge Avenger.png" alt="" width="90%"></center>
+                <h5 class="title">Dodge Avenger</h5>
+                <u>Launch Year: 2023</u>
+                <h6>16.8 Mileage&nbsp;&nbsp;● Petrol</h6>
+                <b>₹25.00 Lakh - ₹40.00 Lakh</b><br>
+                <button class="addtocart" onclick="addToCart(this)">Add To Cart&#8599</button><br><br><br><br>
+            </div>
+
+            <div class="col-lg-3 col-6 ct-1" data-item-id="70" style="margin-top: -35px;">
+                <center><img src="category/dodge/Dodge Grand Caravan.png" alt="" width="95%"></center>
+                <h5 class="title">Dodge Grand Caravan</h5>
+                <u>Launch Year: 2024</u>
+                <h6>13.2 Mileage&nbsp;&nbsp;● Petrol</h6>
+                <b>₹28.00 Lakh - ₹45.00 Lakh</b><br>
+                <button class="addtocart" onclick="addToCart(this)">Add To Cart&#8599</button><br>
+            </div>
+
+            <div class="col-lg-3 col-6 ct-1" data-item-id="71" style="margin-top: -15px;">
+                <center><img src="category/dodge/Dodge Journey.png" alt="" width="85%"></center>
+                <h5 class="title">Dodge Journey</h5>
+                <u>Launch Year: 2023</u>
+                <h6>12.5 Mileage&nbsp;&nbsp;● Diesel</h6>
+                <b>₹40.00 Lakh - ₹55.00 Lakh</b><br>
+                <button class="addtocart" onclick="addToCart(this)">Add To Cart&#8599</button><br><br><br><br>
+            </div>
+
+            <div class="col-lg-3 col-6 ct-1" data-item-id="72" style="margin-top: -55px;">
+                <center><img src="category/dodge/Dodge Charger Daytona.png" alt="" width="100%"></center>
+                <h5 class="title">Dodge Charger Daytona</h5>
+                <u>Launch Year: 2024</u>
+                <h6>11.0 Mileage&nbsp;&nbsp;● Petrol</h6>
+                <b>₹70.00 Lakh - ₹95.00 Lakh</b><br>
+                <button class="addtocart" onclick="addToCart(this)">Add To Cart&#8599</button><br><br>
+            </div>
+
+            <div class="col-lg-3 col-6 ct-1" data-item-id="73" style="margin-top: -20px;">
+                <center><img src="category/dodge/Dodge Charger Super Bee.png" alt="" width="100%"></center><br>
+                <h5 class="title">Dodge Charger Bee</h5>
+                <u>Launch Year: 2024</u>
+                <h6>10.0 Mileage&nbsp;&nbsp;● Petrol</h6>
+                <b>₹60.00 Lakh - ₹85.00 Lakh</b><br>
+                <button class="addtocart" onclick="addToCart(this)">Add To Cart&#8599</button><br><br><br><br><br>
+            </div>
+            
+            <div class="col-lg-3 col-6 ct-1" data-item-id="74" style="margin-top: -100px;">
+                <center><img src="category/dodge/Dodge Hornet.png" alt="" width="100%"></center>
+                <h5 class="title">Dodge Hornet</h5>
+                <u>Launch Year: 2024</u>
+                <h6>25.0 Mileage&nbsp;&nbsp;● Hybrid</h6>
+                <b>₹28.00 Lakh - ₹35.00 Lakh</b><br>
+                <button class="addtocart" onclick="addToCart(this)">Add To Cart&#8599</button>
+            </div>
+
+            <div class="col-lg-3 col-6 ct-1" data-item-id="75" style="margin-top: -25px;">
+                <center><img src="category/dodge/Dodge Challenger Black Ghost.png" alt="" width="100%"></center><br>
+                <h5 class="title">Dodge Challenger Ghost</h5>
+                <u>Launch Year: 2024</u>
+                <h6>18.0 Mileage&nbsp;&nbsp;● Petrol</h6>
+                <b>₹90.00 Lakh - ₹1.2 Crore</b><br>
+                <button class="addtocart" onclick="addToCart(this)">Add To Cart&#8599</button><br><br><br><br>
+            </div>
+
+            <div class="col-lg-3 col-6 ct-1" data-item-id="76" style="margin-top: -30px;">
+                <center><img src="category/dodge/Dodge Journey Crossroad.png" alt="" width="100%"></center>
+                <h5 class="title">Dodge Journey Crossroad</h5>
+                <u>Launch Year: 2023</u>
+                <h6>11.0 Mileage&nbsp;&nbsp;● Diesel</h6>
+                <b>₹40.00 Lakh - ₹55.00 Lakh</b><br>
+                <button class="addtocart" onclick="addToCart(this)">Add To Cart&#8599</button><br>
+            </div>
+
+            <div class="col-lg-3 col-6 ct-1" data-item-id="77">
+                <center><img src="category/dodge/Dodge Charger SRT Hellcat Redeye.png" alt="" width="100%"></center>
+                <h5 class="title">Dodge Charger Hellcat Redeye</h5>
+                <u>Launch Year: 2024</u>
+                <h6>13.0 Mileage&nbsp;&nbsp;● Petrol</h6>
+                <b>₹90.00 Lakh - ₹1.4 Crore</b><br>
+                <button class="addtocart" onclick="addToCart(this)">Add To Cart&#8599</button><br><br><br>
+            </div>
+
+            <div class="col-lg-3 col-6 ct-1" data-item-id="78">
+                <center><img src="category/dodge/Dodge Viper ACR.png" alt="" width="100%"></center><h1></h1>
+                <h5 class="title">Dodge Viper ACR</h5>
+                <u>Launch Year: 2024</u>
+                <h6>6.0 Mileage&nbsp;&nbsp;● Petrol</h6>
+                <b>₹1.8 Crore - ₹2.5 Crore</b><br>
+                <button class="addtocart" onclick="addToCart(this)">Add To Cart&#8599</button><br>
+            </div>
+
+            <div class="col-lg-3 col-6 ct-1" data-item-id="79" style="margin-top: -25px;">
+                <center><img src="category/dodge/ram.png" alt="" width="90%"></center>
+                <h5 class="title">Dodge Ram 2500</h5>
+                <u>Launch Year: 2024</u>
+                <h6>8.0 Mileage&nbsp;&nbsp;● Diesel</h6>
+                <b>₹70.00 Lakh - ₹1.1 Crore</b><br>
+                <button class="addtocart" onclick="addToCart(this)">Add To Cart&#8599</button><br><br>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function search(){
+            let filter = document.getElementById('find').value.toUpperCase();
+
+            let item = document.querySelectorAll('.col-lg-3');
+
+            let l = document.getElementsByTagName('h5');
+
+            for(var i = 0;i<=l.length;i++){
+                let a = item[i].getElementsByTagName('h5')[0];
+
+                let value = a.innerHTML || a.innerText || a.textContent;
+                
+                if(value.toUpperCase().indexOf(filter) > -1){
+                    item[i].style.display="";
+                }
+                else{
+                    item[i].style.display="none";
+                }
+            }
+        }
+    </script>
+    <script src="cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

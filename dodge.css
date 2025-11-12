@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+:root{
+    --item1-transform: translate(-100%,-5%) scale(1.5);
+    --item1-filter: blur(30px);
+    --item1-zindex: 11;
+    --item1-opacity: 0;
+
+    --item2-transform: translate(0,0);
+    --item2-filter: blur(0);
+    --item2-z-index: 10;
+    --item2-opacity: 1;
+
+    --item3-transform: translate(50%,10%) scale(0.8);
+    --item3-filter: blur(10px);
+    --item3-z-index: 9;
+    --item3-opacity: 1;
+
+    --item4-transform: translate(90%,20%) scale(0.5);
+    --item4-filter: blur(30px);
+    --item4-z-index: 9;
+    --item4-opacity: 1;
+
+    --item5-transform: translate(120%,30%) scale(0.3);
+    --item5-filter: blur(40px);
+    --item5-z-index: 7;
+    --item5-opacity: 0;
+    --item5-pointer-events: none;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+}
+
+
+.nav-item{
+    margin-right: 50px;
+}
+.nav-item{
+    color: black;
+    
+}
+.search-bar{
+    width: 50%; 
+}
+.search-1{
+    margin-left: 25%;
+}
+
+.btn-1{
+    position: relative;
+    left: 1%;
+    color: black;
+    border-color: black;
+}
+.btn-1:hover{
+    border: none;
+    background-color: #555;
+    color: white;
+}
+.logo{
+    position: relative;
+    right: 6px;
+    width: 120px; 
+}
+.title{
+    
+        font-size: 25px;
+        font-family: "Libre Baskerville", serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 200%;
+    
+}
+.container-fluid{
+    border-bottom-style: 4px solid;
+    border-color: white;
+    box-shadow: 0px 5px 15px  rgba(189, 178, 178, 0.25) ;
+    transition: background-color 2ms, color 2s;
+    transition-delay: 2ms;
+    position: relative;
+    z-index: 100;
+}
+
+
+
+body,html{
+    overflow-x: hidden;
+}
+
+.bgimg{
+    width: 100%;
+  
+    
+}
+
+.addtocart{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #555;
+    font-family: Poppins;
+    font-weight: bold;
+    padding: 5px 0;
+    font-size: 20px;
+}
+.heading{
+    font-family: "Marko One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+
+.row h5{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 130%;
+}
+.row b{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 140%;
+}
+
+
+.bgimg{
+    opacity: 0;
+    animation:  showContent 0.5s 0.5s ease-in-out 1 forwards;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+@keyframes showContent{
+    from{
+        transform: translateX(-100px);
+        filter: blur(30px);
+    }to{
+        transform: translateZ(0);
+        opacity: 1;
+        filter: blur(0);
+
+    }
+}
+
+.heading{
+    opacity: 0;
+    animation:  showContent1 0.5s 0.9s ease-in-out 1 forwards;
+}
+
+@keyframes showContent1{
+    from{
+        transform: translateX(-100px);
+        filter: blur(30px);
+    }to{
+        transform: translateZ(0);
+        opacity: 1;
+        filter: blur(0);
+
+    }
+}
+
+.row .col-lg-3{
+    opacity: 0;
+    animation:  showContent2 0.5s 1.2s ease-in-out 1 forwards;
+}
+
+@keyframes showContent2{
+    from{
+        transform: translateX(-100px);
+        filter: blur(30px);
+    }to{
+        transform: translateZ(0);
+        opacity: 1;
+        filter: blur(0);
+
+    }
+}
+
+
+
+
+.cart{
+    display: none;
+}
+
+.cart{
+    position: fixed;
+    width: 300px;
+    float: right;
+    text-align: center;
+    right: 20px;
+    border: 1px solid black;
+    overflow-y: scroll;
+    height: 55vh;
+    z-index: 1000; 
+    background-color: #fff;
+    border: none;
+    box-shadow: 0px 5px 15px rgba(0,0, 0, 0.25);
+    border-radius: 10px;    
+}
+.cart .title{
+    font-family: "Linden Hill", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 10px;
+}
+.cart::-webkit-scrollbar{
+    display: none;
+}
+.cartImg > img{
+    width: 200px;
+}
+
+.delete-btn {
+    width: 8vh;
+    font-style: bold;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.delete-btn:hover {
+    transform: scale(1.05);
+}
+.buy-now-btn {
+    width: 10vh;
+    font-style: bold;
+    border-radius: 5px;
+   
+}
+.buy-now-btn:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:992px)and (max-width:1150px){
+    .container-fluid{
+        font-size: 15px;
+    }
+    .search-bar{
+        width: 350px;
+        position: relative;
+        right: 12%;
+     }
+    ul{
+        position: relative;
+        left: -55px;
+    }
+    .title,
+    .logo{
+        position: relative;
+        left: -1%;
+        font-size: 20px;
+    }
+}
+
+@media (min-width:1151px)and (max-width:1225px){
+    .container-fluid{
+        font-size: 15px;
+    }
+    .search-bar{
+        width: 450px;
+        position: relative;
+        right: 12%;
+     }
+    ul{
+        position: relative;
+        left: -70px;
+    }
+    .title,
+    .logo{
+        position: relative;
+        left: -1%;
+        font-size: 20px;
+    }
+}
+
+@media (min-width:1226px)and (max-width:1300px){
+    .container-fluid{
+        font-size: 15px;
+    }
+    .search-bar{
+        width: 450px;
+        position: relative;
+        right: 12%;
+     }
+    ul{
+        position: relative;
+        left: -70px;
+    }
+    .title,
+    .logo{
+        position: relative;
+        left: -1%;
+        font-size: 20px;
+    }
+}
+
+@media (min-width:1301px)and (max-width:1400px){
+    .container-fluid{
+        font-size: 15px;
+    }
+    .search-bar{
+        width: 550px;
+        position: relative;
+        right: 12%;
+     }
+    ul{
+        position: relative;
+        left: -70px;
+    }
+    .title,
+    .logo{
+        position: relative;
+        left: -1%;
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:350px) and (max-width: 768px){
+    .search-bar{
+       width: 450px;
+       position: relative;
+       right: 25%;
+    }
+    
+}
+
+
+@media (min-width: 354px) and (max-width: 429px) {
+    .search-bar{
+       width: 450px;
+       position: relative;
+        right: 25%;
+    }
+}

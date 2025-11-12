@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="audi.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="shortcut icon" href="logo2.jpg">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+    </style>
+    <title>Elite Car Clinic</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand title" href="#"><img class="logo" src="logo.png" alt="">Elite Car Clinic</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 order-lg-3">
+                    <li class="nav-item">
+                        
+                        <a class="nav-link " aria-current="page" href="index.html"><b>Home</b></a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="carbrands.html"><b>Car Brands</b></a>
+                    </li>
+                       
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html"><b>Contact US</b></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link cartad" href="#"><b>Cart <i style="font-size: 105%;" class="uil uil-shopping-bag"></i></b></a>
+                    </li>
+                    
+                    
+                </ul>
+                <form class="d-flex mx-auto order-lg-2 my-2 my-lg-0 search-bar"> 
+                    <input class="form-control search-1" type="search" id="find" onkeyup="search()" autocomplete="off" placeholder="💨 Search Your Favourite" aria-label="Search">
+                </form>
+                
+            </div>
+        </div>
+    </nav>
+    <div class="cart" id="cart">
+        <div class="title">Cart</div><hr>
+        <div id="title"></div>
+    </div>
+<br>
+    <div class="row">
+        <div class="col-lg-12">
+            <img src="category/audi/1.png" alt="" class="bgimg">
+        </div>
+    </div>
+<br><br>
+
+ <h2 class="heading">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All Models</h2><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-6 ct-1" data-item-id="32">
+                <center><img src="category/audi/Audi A6.png" alt="" width="100%"></center>
+                <h5 class="title">Audi A6</h5>
+                <u>Launch Year: 2023</u>
+                <h6>14.1 Mileage&nbsp;&nbsp;● Petrol</h6>
+                <b>₹60.59 Lakh - ₹65.81 Lakh</b><br>
+                <button class="addtocart" onclick="addToCart(this)">Add To Cart&#8599</button><br>
+            </div>
+            <div class="col-lg-3 col-6 ct-1" data-item-id="33" style="margin-top: 5px;">
+                <center><img src="category/audi/Audi Q7.png" alt="" width="100%"></center>
+                <h5 class="title">Audi Q7</h5>
+                <u>Launch Year: 2024</u>
+                <h6>10.2 Mileage&nbsp;&nbsp;● Diesel, Petrol</h6>
+                <b>₹79.99 Lakh - ₹88.33 Lakh</b><br>
+                <button class="addtocart" onclick="addToCart(this)">Add To Cart&#8599</button><br>
+            </div>
+
+            <div class="col-lg-3 col-6 ct-1" data-item-id="34" style="margin-top: 5px;">
+                <center><img src="category/audi/Audi e-Tron GT.png" alt="" width="100%"></center>
+                <h5 class="title">Audi e-Tron GT</h5>
+                <u>Launch Year: 2023</u>
+                <h6>● Electric</h6>
+                <b>₹1.65 Crore - ₹1.89 Crore</b><br>
+                <button class="addtocart" onclick="addToCart(this)">Add To Cart&#8599</button><br>
+            </div>
+            </b>
+            <div class="col-lg-3 col-6 ct-1" data-item-id="35" style="margin-top: -27px;">
+                <center><img src="category/audi/Audi A4.png" alt="" width="100%"></center>
+                <h5 class="title">Audi A4</h5>
+                <u>Launch Year: 2024</u>
+                <h6>17.42 Mileage&nbsp;&nbsp;● Petrol</h6>
+                <b>₹43.12 Lakh - ₹47.61 Lakh</b><br>
+                <button class="addtocart" onclick="addToCart(this)">Add To Cart&#8599</button><br>
+            </div>
+
+
+            <div class="col-lg-3 col-6 ct-1" data-item-id="36">
+                <center><img src="category/audi/Audi Q3.png" alt="" width="100%"></center>
+                <h5 class="title">Audi Q3</h5>
+                <u>Launch Year: 2023</u>
+                <h6>15.2 Mileage&nbsp;&nbsp;● Petrol, Diesel</h6>
+                <b>₹46.27 Lakh - ₹51.94 Lakh</b><br>
+                <button class="addtocart" onclick="addToCart(this)">Add To Cart&#8599</button><br>
+            </div>
+
+            <div class="col-lg-3 col-6 ct-1" data-item-id="37">
+                <center><img src="category/audi/Audi RS7.png" alt="" width="100%"></center>
+                <h5 class="title">Audi RS7</h5>
+                <u>Launch Year: 2024</u>
+                <h6>8.9 Mileage&nbsp;&nbsp;● Petrol</h6>
+                <b>₹2.22 Crore - ₹2.48 Crore</b><br>
+                <button class="addtocart" onclick="addToCart(this)">Add To Cart&#8599</button><br><br>
+            </div>
+
+            <div class="col-lg-3 col-6 ct-1" data-item-id="38" style="margin-top: -10px;">
+                <center><img src="category/audi/Audi Q5.png" alt="" width="100%"></center>
+                <h5 class="title">Audi Q5</h5>
+                <u>Launch Year: 2024</u>
+                <h6>12.4 Mileage&nbsp;&nbsp;● Diesel, Petrol</h6>
+                <b>₹58.33 Lakh - ₹65.24 Lakh</b><br>
+                <button class="addtocart" onclick="addToCart(this)">Add To Cart&#8599</button>
+            </div>
+            
+
+            <div class="col-lg-3 col-6 ct-1" data-item-id="39" style="margin-top: 20px;">
+                <center><img src="category/audi/Audi e-Tron.png" alt="" width="100%"></center>
+                <h5 class="title">Audi e-Tron</h5>
+                <u>Launch Year: 2023</u>
+                <h6>● Electric</h6>
+                <b>₹1.01 Crore - ₹1.18 Crore</b><br>
+                <button class="addtocart" onclick="addToCart(this)">Add To Cart&#8599</button><br>
+            </div>
+
+            <div class="col-lg-3 col-6 ct-1" data-item-id="40">
+                <center><img src="category/audi/Audi A8L.png" alt="" width="100%"></center>
+                <h5 class="title">Audi A8L</h5>
+                <u>Launch Year: 2023</u>
+                <h6>7.8 Mileage&nbsp;&nbsp;● Petrol</h6>
+                <b>₹1.57 Crore - ₹1.89 Crore</b><br>
+                <button class="addtocart" onclick="addToCart(this)">Add To Cart&#8599</button><br>
+            </div>
+
+            <div class="col-lg-3 col-6 ct-1" data-item-id="41" style="margin-top: 5px;">
+                <center><img src="category/audi/Audi Q8.png" alt="" width="100%"></center>
+                <h5 class="title">Audi Q8</h5>
+                <u>Launch Year: 2024</u>
+                <h6>10.0 Mileage&nbsp;&nbsp;● Petrol</h6>
+                <b>₹98.98 Lakh - ₹1.34 Crore</b><br>
+                <button class="addtocart" onclick="addToCart(this)">Add To Cart&#8599</button><br>
+            </div>
+            
+            <div class="col-lg-3 col-6 ct-1" data-item-id="42" style="margin-top: 7px;">
+                <center><img src="category/audi/Audi TT.png" alt="" width="100%"></center>
+                <h5 class="title">Audi TT</h5>
+                <u>Launch Year: 2024</u>
+                <h6>11.5 Mileage&nbsp;&nbsp;● Petrol</h6>
+                <b>₹82.67 Lakh - ₹90.89 Lakh</b><br>
+                <button class="addtocart" onclick="addToCart(this)">Add To Cart&#8599</button><br>
+            </div>
+
+            <div class="col-lg-3 col-6 ct-1" data-item-id="43" style="margin-top: 22px;">
+                <center><img src="category/audi/Audi S5.png" alt="" width="100%"></center>
+                <h5 class="title">Audi S5</h5>
+                <u>Launch Year: 2023</u>
+                <h6>10.9 Mileage&nbsp;&nbsp;● Petrol</h6>
+                <b>₹80.44 Lakh - ₹86.54 Lakh</b><br>
+                <button class="addtocart" onclick="addToCart(this)">Add To Cart&#8599</button><br>
+            </div>
+
+            <div class="col-lg-3 col-6 ct-1" data-item-id="44" style="margin-top: 25px;">
+                <center><img src="category/audi/Audi RS Q8.png" alt="" width="100%"></center>
+                <h5 class="title">Audi RS Q8</h5>
+                <u>Launch Year: 2024</u>
+                <h6>7.5 Mileage&nbsp;&nbsp;● Petrol</h6>
+                <b>₹2.17 Crore - ₹2.48 Crore</b><br>
+                <button class="addtocart" onclick="addToCart(this)">Add To Cart&#8599</button><br>
+            </div>
+
+            <div class="col-lg-3 col-6 ct-1" data-item-id="45" style="margin-top: 13px;"><br>
+                <center><img src="category/audi/Audi Q2.png" alt="" width="100%"></center>
+                <h5 class="title">Audi Q2</h5>
+                <u>Launch Year: 2023</u>
+                <h6>15.5 Mileage&nbsp;&nbsp;● Petrol</h6>
+                <b>₹34.99 Lakh - ₹42.09 Lakh</b><br>
+                <button class="addtocart" onclick="addToCart(this)">Add To Cart&#8599</button>
+            </div>
+
+            <div class="col-lg-3 col-6 ct-1" data-item-id="46" style="margin-top: 40px;">
+                <center><img src="category/audi/avant.png" alt="" width="100%"></center>
+                <h5 class="title">Audi RS6 Avant</h5>
+                <u>Launch Year: 2024</u>
+                <h6>6.2 Mileage&nbsp;&nbsp;● Petrol</h6>
+                <b>₹1.72 Crore - ₹1.97 Crore</b><br>
+                <button class="addtocart" onclick="addToCart(this)">Add To Cart&#8599</button><br><br>
+            </div>
+
+            <div class="col-lg-3 col-6 ct-1" data-item-id="47" style="margin-top: 52px;">
+                <center><img src="category/audi/Audi A7 Sportback.png" alt="" width="100%"></center>
+                <h5 class="title">Audi A7 Sportback</h5>
+                <u>Launch Year: 2024</u>
+                <h6>13.9 Mileage&nbsp;&nbsp;● Petrol</h6>
+                <b>₹90.50 Lakh - ₹1.10 Crore</b><br>
+                <button class="addtocart" onclick="addToCart(this)">Add To Cart&#8599</button><br>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function search(){
+            let filter = document.getElementById('find').value.toUpperCase();
+
+            let item = document.querySelectorAll('.col-lg-3');
+
+            let l = document.getElementsByTagName('h5');
+
+            for(var i = 0;i<=l.length;i++){
+                let a = item[i].getElementsByTagName('h5')[0];
+
+                let value = a.innerHTML || a.innerText || a.textContent;
+                
+                if(value.toUpperCase().indexOf(filter) > -1){
+                    item[i].style.display="";
+                }
+                else{
+                    item[i].style.display="none";
+                }
+            }
+        }
+    </script>
+    <script src="cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
