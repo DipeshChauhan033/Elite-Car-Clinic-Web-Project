@@ -55,9 +55,3 @@ The main goal of **Elite Car Clinic** is to provide users with an **engaging, re
 **Developed by:** Dipesh Chauhan
 
 ---
-
-## 🖼️ Project Preview
-
-![Elite Car Clinic Preview](photo_2025-11-12_21-00-46.jpg)
-
----
